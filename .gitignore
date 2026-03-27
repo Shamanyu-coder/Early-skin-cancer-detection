@@ -6,3 +6,5 @@ frontend/dist/
 *.log
 .DS_Store
 Thumbs.db
+backend/ml/ham10000_dataset_real/
+backend/ml/ham10000_dataset/

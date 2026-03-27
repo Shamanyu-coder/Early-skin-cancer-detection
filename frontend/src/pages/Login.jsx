@@ -34,7 +34,15 @@ const Login = () => {
         window.location.reload();
       }
     } catch (err) {
-      setError(err.response?.data?.detail || 'An error occurred');
+      let errorMsg = 'An error occurred';
+      if (err.response?.data?.detail) {
+        if (typeof err.response.data.detail === 'string') {
+          errorMsg = err.response.data.detail;
+        } else if (Array.isArray(err.response.data.detail)) {
+          errorMsg = err.response.data.detail[0].msg;
+        }
+      }
+      setError(errorMsg);
     }
   };
 

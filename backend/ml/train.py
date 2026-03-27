@@ -6,7 +6,7 @@ from tensorflow.keras.layers import Dense, GlobalAveragePooling2D, Dropout
 from tensorflow.keras.models import Model
 
 # Configuration
-DATASET_PATH = "ham10000_dataset" # Should have 'train' and 'val' subdirectories with 'Benign' and 'Malignant' folders
+DATASET_PATH = "ham10000_dataset_real" # Should have 'train' and 'val' subdirectories with 'Benign' and 'Malignant' folders
 IMG_SIZE = (224, 224)
 BATCH_SIZE = 32
 EPOCHS = 10

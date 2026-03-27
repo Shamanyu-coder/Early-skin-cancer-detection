@@ -1,3 +1,4 @@
+import React, { useState } from 'react';
 import axios from 'axios';
 import { UploadCloud, Activity, ShieldAlert, CheckCircle, Info, Stethoscope, FileText } from 'lucide-react';
 
